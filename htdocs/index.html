@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuberootex</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/katex.min.css">
+
+    <!-- Imports -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <!-- Scripts -->
+    <script defer src="js/main.js"></script>
+	<script defer src="js/darkmode.js"></script>
+</head>
+<body>
+    <div id="splashscreen-solid">
+        <div class="nojs-lol">
+            <p>Are you sure</p>
+            <p class="js-txt">JavaScript</p>
+            <p>is enabled in your browser?</p>
+            <br>
+            <p style="font-size: 24px;">This website won't work without JavaScript...</p>
+        </div>
+    </div>
+
+    <div id="splashscreen">
+        <div class="splash-cbrt">$$\Huge \sqrt[3]x$$</div>
+        <div id="splash-username"></div>
+    </div>
+
+    <header>
+        <div id="header-cbrt" onmouseover="logoCuberoot()" onmouseleave="startResetLogo()">
+            <a href="#">\(\huge \sqrt[3]x\)</a>
+        </div>
+        <div id="header-title">
+            
+        </div>
+        <div class="navbar">
+            <a href="mailto:cuberootex.a8pop@simplelogin.fr">Contact</a>
+            <a href="https://github.com/Cuberootex"><img id="github-logo-img" src="../res/github-mark-white.svg"></a>
+            <button id="btn-toggle-dark" onclick="toggleTheme()"></button>
+        </div>
+    </header>
+
+    <div class="noise-texture"></div>
+    <div class="container-bk-gradient grad-light"></div>
+    <div class="container-bk-gradient grad-dark"></div>
+
+    <main>
+        <!-- <div class="container-bk-gradient grad-light"></div>
+        <div class="container-bk-gradient grad-dark"></div> -->
+
+        <!-- TODO: improve this structure somehow -->
+        <div class="container-inner container-align-mid-right">
+            <div id="home-text">
+                <p id="home-hello-p" class="home-hello">Hello there!</p> <!-- consider using h2/h3 -->
+                <p class="home-me">Je suis <span class="home-highlight">Cuberootex</span>.</p>
+                <p class="home-job-status">Élève en école d'ingénieurs informatique,</p>
+                <p class="home-job-status">je recherche une <span class="home-highlight">alternance à Limoges</span></p>
+                <p class="home-job-status"></p>
+                <p class="home-job-status">pour une durée de trois ans.</p>
+            </div>
+        </div>
+
+        <!-- TODO: propose better class names... -->
+        <!-- <div class="container-inner">
+            <div id="home-text">
+                <p class="home-job-status">Para rebellium in</p>
+                <p class="home-hello">laesus despero fine</p>
+            </div>
+        </div> -->
+
+        <!-- TODO: fix text overlap when zoom > 175% -->
+    </main>
+        
+</body>
+</html>
