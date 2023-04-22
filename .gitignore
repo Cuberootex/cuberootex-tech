@@ -2,3 +2,4 @@
 Dockerfile
 *.conf
 htdocs/dl_res/**
+htdocs/work/**
